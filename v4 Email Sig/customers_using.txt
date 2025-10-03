@@ -1,0 +1,21 @@
+Email Signature
+
+This block lets you easily create and customize your own email signatures. You can add different elements like text, editable text, and images, and arrange them as you like. Moreover, it provides various text styling options such as bold, italic, underline, and more. You can also customize the font styles using Google Fonts. Whether you're adding a personal touch to your emails or enhancing your digital documents, this Signature Generator block has got you covered.
+
+npx @frontify/frontify-cli@latest
+
+https://canopy.safetyculture.com/
+https://brand.epicompany.eu/
+https://medstarhealth.frontify.com/
+https://brand.chubb.com/
+https://demo.frontify.com/
+    - clinm7qqc00014tw29ettunla
+https://providence.frontify.com/
+    - clvfaysru00010yw56unk5wi1
+
+Disclaimer Regarding the Use of Custom Email Signature Generator Block
+Please be advised that the custom Email Signature Generator Block provided is a bespoke solution developed independently and is not officially supported by Frontify. It has been created to address specific needs and is not included in Frontify's out-of-the-box suite of supported features or tools.
+Limitations of Support and Maintenance:
+No Official Support: This block is not supported by Frontify or its technical support teams. Users are advised that they are implementing and using this block at their own risk.
+Maintenance and Updates: There will be no ongoing maintenance, updates, or bug fixes provided for this block. It has been developed to meet particular requirements at the time of its creation, and future changes to its functionality or compatibility are not guaranteed.
+Potential Bugs and Issues: Users should be aware that, given the custom nature of this block, it may contain bugs or issues that could affect its performance. Given the lack of official support and maintenance, these may not be addressed or resolved.

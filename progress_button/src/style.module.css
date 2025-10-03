@@ -1,0 +1,5 @@
+.container {
+    display: flex;
+    gap: 10px; /* Adjust the space between buttons */
+    align-items: center; /* Align buttons vertically */
+}

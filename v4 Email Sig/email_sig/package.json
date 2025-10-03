@@ -1,0 +1,39 @@
+{
+	"name": "email_sig",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"scripts": {
+		"serve": "frontify-cli serve --entryPath src/index.ts",
+		"deploy": "frontify-cli deploy --entryPath src/index.ts",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@ctrl/tinycolor": "^4.1.0",
+		"@frontify/app-bridge": "3.0.0-beta.69",
+		"quill": "^1.3.7",
+		"quill-color-picker-enhance": "^1.1.5",
+		"react": "^18.2.0",
+		"react-beautiful-dnd": "^13.1.1",
+		"react-dom": "^18.2.0",
+		"react-quill": "^2.0.0",
+		"react-slick": "^0.30.2",
+		"slick-carousel": "^1.8.1"
+	},
+	"devDependencies": {
+		"@frontify/eslint-config-react": "^0.15.7",
+		"@frontify/frontify-cli": "^5.3.12",
+		"@frontify/guideline-blocks-settings": "^0.26.7",
+		"@types/react": "^18.2.6",
+		"@types/react-beautiful-dnd": "^13.1.4",
+		"@types/react-dom": "^18.2.4",
+		"@types/react-slick": "^0.23.13",
+		"@types/styled-components": "^5.1.26",
+		"autoprefixer": "^10.4.14",
+		"eslint": "^8.40.0",
+		"prettier": "^2.8.8",
+		"tailwindcss": "^3.3.2",
+		"typescript": "^5.0.4"
+	}
+}

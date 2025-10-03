@@ -1,0 +1,32 @@
+{
+	"name": "print_pdf",
+	"type": "module",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"scripts": {
+		"serve": "frontify-cli serve --entryPath src/index.ts",
+		"deploy": "frontify-cli deploy --entryPath src/index.ts",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@frontify/app-bridge": "^3.5.5",
+		"html2pdf.js": "^0.10.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-to-print": "^3.0.1"
+	},
+	"devDependencies": {
+		"@frontify/eslint-config-react": "^0.17.6",
+		"@frontify/frontify-cli": "^5.6.19",
+		"@frontify/guideline-blocks-settings": "^0.35.1",
+		"@types/react": "^18.2.74",
+		"@types/react-dom": "^18.2.24",
+		"autoprefixer": "^10.4.19",
+		"eslint": "^8.57.0",
+		"prettier": "^3.2.5",
+		"tailwindcss": "^3.4.3",
+		"typescript": "^5.4.4"
+	}
+}

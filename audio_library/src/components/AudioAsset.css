@@ -1,0 +1,80 @@
+.audio-block {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f7f7f7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.play-toggle {
+    display: flex;             /* This makes the button content flex items */
+    align-items: center;       /* Vertically centers the icon */
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 0; /* hides the default font if you use a text fallback for icons */
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.play-toggle svg { 
+    margin: 0;
+    padding: 0;
+    display: block; /* Ensures SVG doesn't occupy more space than its viewbox */
+}
+
+.play-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.play-toggle:active {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0.98);
+}
+
+.icon-play, .icon-pause {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-play {
+    background-image: url('path-to-your-play-icon.svg');
+}
+
+.icon-pause {
+    background-image: url('path-to-your-pause-icon.svg');
+}
+
+.waveform {
+    flex: 1;
+    margin-left: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.audio-title {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 12px;
+    font-size: 16px;
+    color: #333;
+}

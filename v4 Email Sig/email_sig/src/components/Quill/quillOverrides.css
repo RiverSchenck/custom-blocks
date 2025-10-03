@@ -1,0 +1,38 @@
+:root {
+  --small-font-size: 12px;
+  --large-font-size: 18px;  
+  --huge-font-size: 24px; 
+}
+
+.ql-size-small {
+    font-size: var(--small-font-size);
+  }
+.ql-size-large {
+    font-size: var(--large-font-size);
+  }
+.ql-size-huge {
+    font-size: var(--huge-font-size);
+  }
+.ql-editor .ql-size-small {
+  font-size: var(--small-font-size);
+}
+.ql-editor .ql-size-large {
+  font-size: var(--large-font-size);
+}
+.ql-editor .ql-size-huge {
+  font-size: var(--huge-font-size);
+}
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+  margin-bottom: 10px;
+}
+.iconContainer:hover {
+  background-color: #f0f0f0;
+}
+.ql-editor {
+  white-space: normal !important;
+}
