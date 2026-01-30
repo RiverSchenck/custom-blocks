@@ -1,0 +1,11 @@
+node_modules
+dist
+.idea
+.vscode
+.env
+.env.local
+.env.*.local
+supabase
+supabase.backup
+*.sql
+types/database.types.ts
