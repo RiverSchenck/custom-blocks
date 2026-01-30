@@ -6,17 +6,25 @@ import {
 } from '@frontify/guideline-blocks-settings';
 
 const normalizeAngle = (v: string | undefined, fallback = '0deg') => {
-    if (!v) return fallback;
+    if (!v) {
+        return fallback;
+    }
     const t = v.trim();
-    if (/(deg|rad)$/i.test(t)) return t;
+    if (/(deg|rad)$/i.test(t)) {
+        return t;
+    }
     const n = Number(t);
     return Number.isFinite(n) ? `${n}deg` : fallback;
 };
 
 const normalizeRadius = (v?: string, fallback = '105%') => {
     const t = String(v ?? '').trim();
-    if (!t) return fallback;
-    if (/%$|m$|cm$|mm$/i.test(t)) return t;
+    if (!t) {
+        return fallback;
+    }
+    if (/%$|m$|cm$|mm$/i.test(t)) {
+        return t;
+    }
     const n = Number(t);
     return Number.isFinite(n) ? `${n}%` : fallback;
 };
@@ -100,7 +108,9 @@ export const settings = defineSettings({
                                 const id = 'cameraOrbitTheta';
                                 const val = bundle.getBlock(id)?.value as string | undefined;
                                 const next = normalizeAngle(val, '0deg');
-                                if (next !== val) bundle.setBlockValue(id, next);
+                                if (next !== val) {
+                                    bundle.setBlockValue(id, next);
+                                }
                             },
                         },
                         {
@@ -116,7 +126,9 @@ export const settings = defineSettings({
                                 const id = 'cameraOrbitPhi';
                                 const val = bundle.getBlock(id)?.value as string | undefined;
                                 const next = normalizeAngle(val, '75deg');
-                                if (next !== val) bundle.setBlockValue(id, next);
+                                if (next !== val) {
+                                    bundle.setBlockValue(id, next);
+                                }
                             },
                         },
                         {
@@ -132,7 +144,9 @@ export const settings = defineSettings({
                                 const id = 'cameraOrbitRadius';
                                 const val = bundle.getBlock(id)?.value as string | undefined;
                                 const next = normalizeRadius(val, '105%'); // appends % if missing; allows m/cm/mm
-                                if (next !== val) bundle.setBlockValue(id, next);
+                                if (next !== val) {
+                                    bundle.setBlockValue(id, next);
+                                }
                             },
                         },
                     ],

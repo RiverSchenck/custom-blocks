@@ -5,8 +5,11 @@ declare global {
                 src?: string;
                 poster?: string;
                 alt?: string;
-                'camera-controls'?: boolean;
-                'auto-rotate'?: boolean;
+                'camera-controls'?: boolean | string;
+                'auto-rotate'?: boolean | string;
+                'rotation-per-second'?: string;
+                'camera-orbit'?: string;
+                'environment-image'?: string;
                 ar?: boolean;
                 reveal?: 'auto' | 'interaction' | 'manual';
                 loading?: 'eager' | 'lazy';
@@ -14,7 +17,6 @@ declare global {
                 style?: React.CSSProperties;
                 ref?: React.Ref<HTMLElement>;
                 className?: string;
-                // ...add more as needed
             };
         }
     }
